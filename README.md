@@ -1,6 +1,8 @@
 # Template Proyek Django PBP
 Nama : Carlene Annabel
+
 NPM : 2106752211
+
 Kelas : D
 
 Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
