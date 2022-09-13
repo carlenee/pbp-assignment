@@ -9,8 +9,7 @@ Kelas : D
 <a href="https://katalog-carlene.herokuapp.com/katalog/" target= "_blank">Link Aplikasi Heroku</a>
 
 ## **Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html**
-![Bagan](https://github.com/carlenee/
-assignment2-repository/bagan/Bagan.png)
+![Bagan](bagan/Bagan.png)
 
 Dari bagan di atas, dapat dilihat bahwa terdapat dua komponen yaitu, client side dan server side. View berada pada server side dan Template berada pada client side.
 
