@@ -2,7 +2,7 @@
 
  {% block content %}
 
-  <h1>Lab 1 Assignment PBP/PBD</h1>
+  <h1 style="text-align:center">Lab 1 Assignment PBP/PBD</h1>
 
   <h5>Name: </h5>
   <p>{{nama}}</p>
@@ -20,7 +20,7 @@
       <th>Item URL</th>
     </tr>
     {% comment %} Add the data below this line {% endcomment %}
-    {% for katalog in list_katalog %}
+  {% for katalog in list_katalog %}
     <tr>
       <th>{{ katalog.item_name }}</th>
       <th>{{ katalog.item_price }}</th>
