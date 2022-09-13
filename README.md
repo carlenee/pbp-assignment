@@ -33,7 +33,7 @@ Kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual 
 
 4. Melakukan mapping terhadap data yang telah ikut di-render pada fungsi views, menggunakan sintaks khusus template yang ada pada Django, {{data}}.  Melakukan iterasi terhadap variabel data yang telah ikut render ke dalam HTML.
 
-5. Mendeploy project ke heroku.
+5. Mendeploy project ke heroku
 
 
 
