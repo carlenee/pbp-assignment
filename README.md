@@ -9,8 +9,12 @@ Kelas : D
 <a href="https://katalog-carlene.herokuapp.com/katalog/" target= "_blank">Link Aplikasi Heroku</a>
 
 ## **Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html**
+<<<<<<< HEAD
 ![Bagan](https://github.com/carlenee/
 assignment2-repository/bagan/Bagan.png?raw=true)
+=======
+![Bagan](bagan/Bagan.png)
+>>>>>>> fd173a6422587afed9899c939291f525e36d888e
 
 Dari bagan di atas, dapat dilihat bahwa terdapat dua komponen yaitu, client side dan server side. View berada pada server side dan Template berada pada client side.
 
@@ -34,7 +38,7 @@ Kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual 
 
 4. Melakukan mapping terhadap data yang telah ikut di-render pada fungsi views, menggunakan sintaks khusus template yang ada pada Django, {{data}}.  Melakukan iterasi terhadap variabel data yang telah ikut render ke dalam HTML.
 
-5. Mendeploy project ke heroku.
+5. Mendeploy project ke heroku
 
 
 
