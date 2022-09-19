@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Assignment 3 PBP</h1>
+<h5>Name:</h5>
+<p>{{nama}}</p>
+
+<h5>Student ID:</h5>
+<p>{{student_id}}</p>
+<table>
+    <tr>
+    <th>Title</th>
+    <th>Watched</th>
+    <th>Release Date</th>
+    <th>Rating</th>
+    <th>Review</th>
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for movie in mywatchlist %}
+    <tr>
+      <td>{{movie.title}}</td>
+      <td>{{movie.watched}}</td>
+      <td>{{movie.release_date}}</td>
+      <td>{{movie.rating}}</td>
+      <td>{{movie.review}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}

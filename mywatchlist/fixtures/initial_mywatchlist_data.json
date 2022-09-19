@@ -1,0 +1,124 @@
+[
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":1,
+        "fields":{
+            "watched":true,
+            "title":"Barbie as Rapunzel",
+            "rating":3,
+            "release_date":"2002-10-01",
+            "review":"Good movie This is a good barbie movie. "
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":2,
+        "fields":{
+            "watched":true,
+            "title":"Barbie and the Magic of Pegasus",
+            "rating":5,
+            "release_date":"2005-09-30",
+            "review":"One of the best barbie movie of all time, great visualization, story, and music."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":3,
+        "fields":{
+            "watched":false,
+            "title":"Barbie: A Perfect Christmas",
+            "rating":3,
+            "release_date":"2011-11-08",
+            "review":"It's a harmless fun little holiday movie in this franchise."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":4,
+        "fields":{
+            "watched":true,
+            "title":"Barbie: A Fashion Fairytale",
+            "rating":2,
+            "release_date":"2010-09-14",
+            "review":"Focused heavy on fashion. Shallow movie. This is when mattel's direction changed. Fairies feature in this as well as magic yet again especially at the end. Don't recommend."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":5,
+        "fields":{
+            "watched":true,
+            "title":"Barbie: Princess Charm School",
+            "rating":4,
+            "release_date":"2011-03-15",
+            "review":"Great plot, costume, visualization, but lack of music."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":6,
+        "fields":{
+            "watched":true,
+            "title":"Barbie in A Mermaid Tail",
+            "rating":4,
+            "release_date":"2010-03-02",
+            "review":"Love it. It is so good and the best movie I have ever seen. My favorite character is the seal, its so cute and funny!"
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":7,
+        "fields":{
+            "watched":true,
+            "title":"Barbie as the Island Princess",
+            "rating":4,
+            "release_date":"2007-09-18",
+            "review":"One of the best barbie musical movies of all time. Great family movie."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":8,
+        "fields":{
+            "watched":true,
+            "title":"Barbie and the Three Musketeers",
+            "rating":3,
+            "release_date":"2009-09-15",
+            "review":"Overall watching this movie again was enjoyable,had a good message but so many things did not add up."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":9,
+        "fields":{
+            "watched":true,
+            "title":"Barbie: A Fairy Secret",
+            "rating":1,
+            "release_date":"2011-03-15",
+            "review":"Weird messages about money & shipping, set the feminist movement back 100 years."
+        }
+    },
+    {
+        "model":"mywatchlist.MyWatchList",
+        "pk":10,
+        "fields":{
+            "watched":true,
+            "title":"Barbie: Spy Squad",
+            "rating":2,
+            "release_date":"2016-03-01",
+            "review":"Compared to other Barbie movies this one didn't exceed my expectations."
+        }
+    },
+    {
+        
+        "model":"mywatchlist.MyWatchList",
+        "pk":11,
+        "fields":{
+            "watched":true,
+            "title":"Barbie & the Diamond Castle",
+            "rating":5,
+            "release_date":"2008-09-09",
+            "review":"Pure magic and imagination at its finest."
+        }
+    }
+]
