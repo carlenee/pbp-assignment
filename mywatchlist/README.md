@@ -206,8 +206,11 @@ release: sh -c 'python manage.py migrate && python manage.py loaddata initial_ca
 
 ## **Mengakses tiga URL menggunakan Postman, menangkap screenshot**
 
+HTML RESPONSE
 ![HTML RESPONSE](pictures/html_response.png)
 
+XML RESPONSE
 ![XML RESPONSE](pictures/xml_response.png)
 
+JSON RESPONSE
 ![JSON RESPONSE](pictures/json_response.png)
