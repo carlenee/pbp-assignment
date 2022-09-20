@@ -4,9 +4,10 @@ Nama : Carlene Annabel
 
 NPM : 2106752211
 
-Kelas : D
+Kelas :D
 <details>
     <summary>Assignment 1</summary>
+
     <a href="https://katalog-carlene.herokuapp.com/katalog/" target= "_blank">Link Aplikasi Heroku</a>
 
     ## **Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html**
@@ -40,6 +41,7 @@ Kelas : D
     4. Melakukan mapping terhadap data yang telah ikut di-render pada fungsi views, menggunakan sintaks khusus template yang ada pada Django, {{data}}.  Melakukan iterasi terhadap variabel data yang telah ikut render ke dalam HTML.
 
     5. Mendeploy project ke heroku
+    
 </details>
 
 
