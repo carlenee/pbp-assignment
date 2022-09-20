@@ -1,11 +1,8 @@
-from socketserver import DatagramRequestHandler
-from urllib import request
 from django.shortcuts import render
-from mywatchlist.apps import MywatchlistConfig
 from mywatchlist.models import MyWatchList
 from django.http import HttpResponse
 from django.core import serializers
-# Create your views here.
+
 data_mywatchlist = MyWatchList.objects.all()
 context = {
     'mywatchlist' : data_mywatchlist,
