@@ -1,23 +1,32 @@
 {% extends 'base.html' %}
  {% block content %}
 
+<div class="header">
+    <h1> Hello, {{user}} </h1>
+</div>
 
-<h4> Hello, {{user}} </h4>
-<button><a href="{% url 'todolist:create_task' %}">Create Task</a></button>
-<table>
-    <tr>
-        <th>Task</th>
-        <th>Description</th>
-        <th>Created</th>
-    </tr>
-    {% for task in todolist %}
-        <tr>
-            <th>{{task.title}}</th>
-            <th>{{task.description}}</th>
-            <th>{{task.date}}</th>
-        </tr>
-    {% endfor %}
-</table>
+<div class="todolist">
+    <table class="listtable">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Created</th>
+            </tr>
+        </thead>
+        {% for task in todolist %}
+        <tbody>
+            <tr>
+                <th>{{task.title}}</th>
+                <th>{{task.description}}</th>
+                <th>{{task.date}}</th>
+            </tr>
+        </tbody>    
+        {% endfor %}
+    </table>
+</div>
 
+<p><a href="{% url 'todolist:create_task' %}">Create Task</a></p>
 <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
 {% endblock content %}

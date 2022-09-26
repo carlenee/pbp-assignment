@@ -6,13 +6,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&display=swap" rel="stylesheet">
   {% block meta %}
   {% endblock meta %}
+
+  <style>
+    body {
+      background-color: #f5f3f3;
+      font-family: 'Inter Tight', sans-serif;
+      padding-top: 50px;
+    }
+
+    h1,
+    h3,
+    h4
+        {
+        font-family: 'Raleway', sans-serif;
+        color: #434643;
+        text-align: center;
+    }
+
+    .container {
+            max-width: flex;
+            margin: auto;
+            background-color: #fff;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            text-align: center;
+    }
+
+    .header {
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #d6eec8 0%, #97cc7c 43%, #6d9c63 100%);
+    }
+
+   
+    .listtable {
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      font-family: sans-serif;
+      min-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .listtable thead tr {
+      background-color: #8cbcb2;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    .listtable th, td{
+      padding: 12px 15px;
+    }
+
+    .listtable tbody tr {
+    border-bottom: 1px solid #dddddd;
+    }
+
+    .listtable tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+    button{
+      background-color: #d6eec8;
+    }
+
+    input{
+      background-color: #d6eec8;
+      outline: none;
+      border: none;
+    }
+
+    
+
+
+  </style>
 </head>
 
 <body>
-  {% block content %}
-  {% endblock content %}
+  <div class= "container">
+    {% block content %}
+    {% endblock content %}
+  </div>
+  
 </body>
 
 </html>

@@ -4,8 +4,8 @@ from django.forms import ModelForm
 from .models import *
 
 class TaskForm(forms.ModelForm):
-    title= forms.CharField(widget= forms.TextInput(attrs={'size':'40'}))
-    description= forms.CharField(widget=forms.TextInput(attrs={'size': '100'}))
+    title= forms.CharField(widget= forms.TextInput(attrs={'size':'30'}))
+    description= forms.CharField(widget=forms.TextInput(attrs={'size': '60'}))
 
     class Meta:
         model = Task
