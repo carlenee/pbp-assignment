@@ -9,19 +9,43 @@
     <table class="listtable">
         <thead>
             <tr>
+                <th>Completed</th>
                 <th>Task</th>
                 <th>Description</th>
                 <th>Created</th>
+                <th>Status</th>
+                <th>Delete</th>
             </tr>
         </thead>
         {% for task in todolist %}
         <tbody>
             <tr>
+                <th>
+                    <input class='todolist-check' 
+                            type="checkbox" 
+                            id='{{task.id}}' 
+                            value= '{{task.ud}'
+                            name="finishbtn"
+                            {% if task.is_finished %} checked {% endif %}
+                            onchange="location.href='{% url 'todolist:mark_as_finished' task.id %}'"  
+                    />                  
+                    <!-- <span class="checkmark"></span> -->
+                </th>
                 <th>{{task.title}}</th>
                 <th>{{task.description}}</th>
                 <th>{{task.date}}</th>
+                {% if task.is_finished == True %}
+                    <td style="text-align: center; color: greenyellow">Completed</td>
+                {% else %}
+                    <td style="text-align: center; color: red">Unfinished</td>
+                {% endif %}
+                <th>
+                    <p>halo</p>
+                </th>
+
             </tr>
-        </tbody>    
+        </tbody>
+        
         {% endfor %}
     </table>
 </div>

@@ -1,3 +1,4 @@
+from winreg import REG_QWORD
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
@@ -76,4 +77,11 @@ def create_task(request):
         return HttpResponseRedirect(reverse("todolist:show_todolist"))
     context = {'form': form}
     return render(request, 'create-task.html', context)
+
+def mark_as_finished(request, id):
+    task = Task.objects.get(user=request.user, id=id)
+    task.is_finished = not(task.is_finished)
+    task.save(update_fields = ['is_finished'])
+    return HttpResponseRedirect(reverse("todolist:show_todolist"))
+
 
