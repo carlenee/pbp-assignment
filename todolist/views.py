@@ -11,6 +11,8 @@ import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .forms import *
+from django.utils import timezone
+
 
 
 @login_required(login_url="/todolist/login/")
@@ -22,7 +24,8 @@ def show_todolist(request):
         data_tasklist = Task.objects.filter(user= request.user)
         context = {'todolist': data_tasklist, 
                     'username': user_name,
-                    'last_login': request.COOKIES['last_login']}
+                    # 'last_login': request.COOKIES['last_login']
+        }
     return render(request, 'todolist.html', context)
 
 
@@ -70,6 +73,7 @@ def create_task(request):
             new_task = form.save(commit=False)
             new_task.user = request.user
             new_task.save()
+        return HttpResponseRedirect(reverse("todolist:show_todolist"))
     context = {'form': form}
     return render(request, 'create-task.html', context)
 
