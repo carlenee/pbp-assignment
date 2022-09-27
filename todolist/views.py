@@ -83,4 +83,10 @@ def mark_as_finished(request, id):
     task.save(update_fields = ['is_finished'])
     return HttpResponseRedirect(reverse("todolist:show_todolist"))
 
+def delete_task(request, id):
+    task = Task.objects.get(id=id)
+    task.delete()
+    return HttpResponseRedirect(reverse("todolist:show_todolist"))
+
+
 

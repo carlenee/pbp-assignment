@@ -7,14 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   {% block meta %}
   {% endblock meta %}
 
   <style>
+    @font-face {
+      font-family: Ubuntu-Regular;
+      src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
+    }
     body {
-      background-color: #e1f4d1;
-      font-family: 'Inter Tight', sans-serif;
+      background-color: #edf7f6;
       padding-top: 50px;
     }
 
@@ -22,12 +25,12 @@
     h3,
     h4
         {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Arvo', serif;
         color: #434643;
         text-align: center;
     }
 
-    .container {
+    .todolist-container {
             max-width: 900px;
             margin: auto;
             background-color: #fff;
@@ -35,6 +38,35 @@
             box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
             text-align: center;
     }
+    .login {
+      max-width: 350px;
+      margin: auto;
+      background-color: #fff;
+      -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      text-align: center;
+      
+    }
+
+    .createtask-container{
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      text-align: center;
+    }
+
+    .register-container {
+      max-width: 750px;
+      margin: auto;
+      background-color: #fff;
+      -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+      text-align: center;
+    }
+
+    
 
     .header {
             display: flex;
@@ -87,6 +119,20 @@
       border: none;
     }
 
+    .btn {
+      background-color: white; 
+      border: none; /* Remove borders */
+      color: black; /* White text */
+      padding: 12px 16px; /* Some padding */
+      font-size: 16px; /* Set a font size */
+      cursor: pointer; /* Mouse pointer on hover */
+    }
+    
+    .btn:hover {
+      background-color: #d6eec8;
+    }
+
+    
     
   </style>
 </head>
