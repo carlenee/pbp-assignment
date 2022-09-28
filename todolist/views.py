@@ -7,11 +7,9 @@ from django.contrib.auth import logout
 from todolist.models import Task
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .forms import *
-from django.utils import timezone
 
 
 
